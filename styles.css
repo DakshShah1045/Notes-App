@@ -1,0 +1,143 @@
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e90ff, #87cefa);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1e90ff;
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 1.5rem;
+    }
+
+    .folder {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .folder:hover {
+      background: #f0f8ff;
+    }
+
+    .notes-container {
+      margin-top: 1rem;
+    }
+
+    .note {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+      background: #fefefe;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .note-content {
+      flex: 1;
+      margin-right: 0.5rem;
+    }
+
+    .note-content[contenteditable] {
+      outline: none;
+      cursor: text;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 0.6rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    button {
+      background: #1e90ff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #1c86ee;
+    }
+
+    button[style*="background: red"] {
+      background: #ff6347;
+    }
+
+    button[style*="background: red"]:hover {
+      background: #ff4500;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      header {
+        font-size: 1.5rem;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+  @media (max-width: 350px) {
+      .container {
+        width: 85%;
+      }
+
+    .big-btn{
+      width: 100%;
+    }
+
+      button {
+        width: 50%;
+      }
+    }
