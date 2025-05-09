@@ -1,4 +1,4 @@
- alert("Developed By Daksh Shah ")
+ 
 
   const foldersContainer = document.getElementById('folders');
     let folders = JSON.parse(localStorage.getItem('folders')) || {};
